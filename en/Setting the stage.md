@@ -8,3 +8,7 @@
   Now select the **Capsule** by clicking on it. Look to the right and you should see loads of options and menus. This is called the **Inspector** and it's where you setup most of the objects in your game.
   
   You can rename an object by typing a new name in at the top of the inspector. Change the name of the **Capsule** to "MazeRoboBody" now.
+7. Next, to be sure that MazeRobo is right at the middle of the game world, look in the **Transform** section of the **Inspector** and click on the cog icon and choose "Reset".
+8. You need a couple more objects to make your robot, so create a **Cube** (**GameObjects > 3D Object > Cube**) and a **Sphere** (**GameObjects > 3D Object > Sphere**).
+
+  Rename the **Cube** to "Shades" and the **Sphere** to "Nose".
