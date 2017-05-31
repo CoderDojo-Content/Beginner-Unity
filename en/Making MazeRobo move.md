@@ -1,7 +1,27 @@
 1. Create a new folder (**Assets > Create > Folder**) inside the Project Pane "Assets" folder (you make need to click on this in the **projects** section first), and call it "Scripts".
-Create a new C# script (Assets > Create >  C# Script) in this folder and call it RoboMover.
+Create a new C# script (**Assets > Create >  C# Script**) in this folder and call it "RoboMover".
 
-Doubleclick on RoboMover  to open it in your editor. In RoboMover,
+2. Double-click on "RoboMover" to open it in your editor. In the editor. You should see code like this:
+	
+	```cs
+	using System.Collections;
+	using System.Collections.Generic;
+	using UnityEngine;
+	
+	public class RoboMover : MonoBehaviour {
+	
+		// Use this for initialization
+		void Start () {
+			
+		}
+		
+		// Update is called once per frame
+		void Update () {
+			
+		}
+	}
+	```
+
 Add a public float called moveSpeed and initialise it at 4.0f
 Add a public Rigidbody called rb - this will be how we refer to the Rigidbody component!
 Add a public Transform called tf - and this is how we refer to the Transform component!
