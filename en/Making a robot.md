@@ -22,10 +22,16 @@
   * Y: 0.5
   * Z: 0.5
   
-6. It doesn't quite look like anything yet, does it? Staying in the **Inspector** look at the **scale** controls. They control the shape of the object. Set "Shades" to these values:
+6. It doesn't quite look like anything yet, does it? Staying in the **Inspector** look at the **scale** controls. They control the shape of the object. Set "Shades" **scale** to these values:
 
   * X: 0.64
   * Y: 0.16
   * Z: 0.16
   
-  Now set 
+  Now set "Nose" **scale** to:
+  
+  * X: 0.16
+  * Y: 0.16
+  * Z: 0.16
+
+  That's starting to look like a robot!
