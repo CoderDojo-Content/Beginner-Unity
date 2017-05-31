@@ -3,24 +3,53 @@ Create a new C# script (**Assets > Create >  C# Script**) in this folder and cal
 
 2. Double-click on "RoboMover" to open it in your editor. In the editor. You should see code like this:
 	
-	```cs
-	using System.Collections;
-	using System.Collections.Generic;
-	using UnityEngine;
-	
-	public class RoboMover : MonoBehaviour {
-	
-		// Use this for initialization
-		void Start () {
-			
-		}
+  ```cs
+  using System.Collections;
+  using System.Collections.Generic;
+  using UnityEngine;
+  
+  public class RoboMover : MonoBehaviour {
+
+	  // Use this for initialization
+	  void Start () {
 		
-		// Update is called once per frame
-		void Update () {
-			
-		}
-	}
-	```
+	  }
+	
+	  // Update is called once per frame
+	  void Update () {
+		
+	  }
+  }
+  ```
+  Let's look at what you've got here. You can ignore the first three lines, for now. They're just the program setting up things it needs. Then you've got 
+  
+  ```cs
+    public class RoboMover : MonoBehaviour {
+  ```
+
+  This is the start of a **class** (a blueprint of code) called "RoboMover". Don't worry about the `: MonoBehaviour` bit for now. Everything between this first `{` and the last `}` is inside the "RoboMover" class.
+
+  Then you have two empty **functions** called "Start" and "Update". Right now, they're exactly the same except for their names, so let's just look at one quickly:
+  
+  ```cs
+    void Update() {
+    
+    }
+  ```
+
+  A function is a set of instructions to do something, wrapped up in a label for the task that makes it easy to remember. For example, for a human, "Make a cup of tea" is a function. We know there are lots of steps to it and, at the end, you have a cup of tea. It would be silly to have to tell someone every step every time you wanted them to make you some tea. The same is true of asking the computer to do something. Much easier to teach it once, in one place, and then get it to do it over and over agin later!
+  
+  The first word in this **function** declaration is `void`. That means the **function** doesn't **return** anything. That is, it gives nothing back. "Make me a cup of tea" **returns** a cup of tea once all the instructions are done, but "Add milk" doesn't return anything, it just changes the cup of tea that already exists. So "Add milk" would be a `void` function!
+  
+  Next comes the name of the **function**, that easy label you can use to **call** the function from elsewhere in your code. Notice the brackets `()` beside it though. They're empty now, but they can be used to **pass** information into the function. For example: "Make me a cup of tea (with milk, two sugars)".
+  
+  Finally, you have the curly braces `{}`. Everything inside them is the set of instructions the program will follow when the **function** is called. For "Make me a cup of tea" that would be things like:
+    * Boil water
+    * Put water in teapot
+    * Add teabag
+    * etc.
+    
+
 
 Add a public float called moveSpeed and initialise it at 4.0f
 Add a public Rigidbody called rb - this will be how we refer to the Rigidbody component!
