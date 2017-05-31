@@ -1,2 +1,2 @@
 1. Create a new folder (**Assets > Create > Folder**) and call it "Materials".
-2. 
+2. Now make two **materials** (**Assets > Create > Materials**) called "EyeBlack" and "NoseRed" and drag them into the the "Materials" folder in the "Project" pane at the bottom of the screen.
