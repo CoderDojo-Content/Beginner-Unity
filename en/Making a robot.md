@@ -34,4 +34,4 @@
   * Y: 0.16
   * Z: 0.16
 
-  That's starting to look like a robot!
+  That's starting to look like a robot! Time to add some colour!
