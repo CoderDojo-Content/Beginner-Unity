@@ -20,4 +20,4 @@
 
   Make the Y **scale** 3 and rename the object to "Wall"!
  
-4. Now make a new material for "Wall" (**Assets > Create > Materials**)—now rename it "WallBlue" and give it a (surprise!) blue colour! Assign it to "Wall" using the **MeshRender > Materials** section of the **inspector**. Later on, you’ll turn this wall into a maze for MazeRobo to explore!
+5. Now make a new material for "Wall" (**Assets > Create > Materials**)—now rename it "WallBlue" and give it a (surprise!) blue colour! Assign it to "Wall" using the **MeshRender > Materials** section of the **inspector**. Later on, you’ll turn this wall into a maze for MazeRobo to explore!
