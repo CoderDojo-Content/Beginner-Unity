@@ -76,10 +76,17 @@ Create a new C# script (**Assets > Create >  C# Script**) in this folder and cal
     
     }
   ```
+5. Now you need to fill out the `Update` function with this code: 
 
-
-
-Remove the Start section, we don’t need it here.
+  ```cs
+    // Update is called once per frame
+    void Update () {
+      Vector3 desiredDirection = new Vector3 (Input.GetAxis ("Horizontal"), 0.0f, Input.GetAxis ("Vertical"));
+      desiredDirection = moveSpeed * desiredDirection;
+      desiredDirection = Time.deltaTime * desiredDirection;
+      rb.MovePosition (rb.position + desiredDirection);
+    }
+  ```
 In the Update function,
 Get the direction you want from the input (controller stick or keyboard) -> Create a new Vector3 called desiredDirection and assign it the input from the player.			Vector3 desiredDirection = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
 Multiply the desiredDirection by the movement speed we set for MazeRobo -> Assign desiredDirection the moveSpeed multiplied by desiredDirection.				desiredDirection = moveSpeed * desiredDirection;
