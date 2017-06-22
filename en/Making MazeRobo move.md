@@ -97,5 +97,4 @@ Create a new C# script (**Assets > Create >  C# Script**) in this folder and cal
  [IMG HERE]
 7. There are two empty fields in the RoboMover script—`rb` and `tf`. These stand for Rigidbody and Transform and if you click-and-drag the names of these components from their places in the Inspector and into their respective fields, RoboMover (the script) will have all the info it needs to move MazeRobo!
   [IMG HERE] 
-8. Get back into Unity and click on the big ‘Play’ button on the top centre of the Unity interface...
-MAZEROBO MOVES!
+8. Get back into Unity and click on the big ‘Play’ button on the top centre of the Unity interface... MAZEROBO MOVES!
