@@ -67,6 +67,7 @@ Create a new C# script (**Assets > Create >  C# Script**) in this folder and cal
     * `moveSpeed`—a float (decimal) number, in this case 4.0
     * `rb`—a variable you'll use to refer to the Rigidbody component
     * `tf`—a variable you'll use to refer to the Transform component
+
 4. You don't actually need the `Start` function in this program, so you can delete these lines:
   
   ```cs
