@@ -94,9 +94,8 @@ Create a new C# script (**Assets > Create >  C# Script**) in this folder and cal
   What all this adds up to is moving the character a tiny bit in the direction the player is sending it with the controls, every time the screen is updated. That should do it! You're close to getting MazeRobo moving now!
 
 6. Back in Unity, drag and drop your RoboMover script from the scripts folder and onto the MazeRobo gameobject in the Hierarchy. You can see that script is now present in MazeRobo’s inspector, under the Rigidbody.
- 
-There are two empty fields in the RoboMover script - Rb and Tf. These stand for Rigidbody and Transform - and if we click-and-drag the names of these components from their places in the Inspector and into their respective fields, RoboMover (the script) will have all the info it needs to move MazeRobo!
-
- 
-Get back into Unity and click on the big ‘Play’ button on the top centre of the Unity interface...
+ [IMG HERE]
+7. There are two empty fields in the RoboMover script—`rb` and `tf`. These stand for Rigidbody and Transform and if you click-and-drag the names of these components from their places in the Inspector and into their respective fields, RoboMover (the script) will have all the info it needs to move MazeRobo!
+  [IMG HERE] 
+8. Get back into Unity and click on the big ‘Play’ button on the top centre of the Unity interface...
 MAZEROBO MOVES!
