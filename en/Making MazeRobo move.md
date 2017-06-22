@@ -41,7 +41,7 @@ Create a new C# script (**Assets > Create >  C# Script**) in this folder and cal
   
   The first word in this **function** declaration is `void`. That means the **function** doesn't **return** anything. That is, it gives nothing back. "Make me a cup of tea" **returns** a cup of tea once all the instructions are done, but "Add milk" doesn't return anything, it just changes the cup of tea that already exists. So "Add milk" would be a `void` function!
   
-  Next comes the name of the **function**, that easy label you can use to **call** the function from elsewhere in your code. Notice the brackets `()` beside it though. They're empty now, but they can be used to **pass** information into the function. For example: "Make me a cup of tea (with milk, two sugars)".
+  Next comes the name of the **function**, that easy label you can use to **call** the function from elsewhere in your code. Notice the brackets `()` beside it though. They're empty now, but they can be used to **pass** information into the function. For example: "Make me a cup of tea (two sugars)".
   
   Finally, you have the curly braces `{}`. Everything inside them is the set of instructions the program will follow when the **function** is called. For "Make me a cup of tea" that would be things like:
     * Boil water
@@ -49,11 +49,27 @@ Create a new C# script (**Assets > Create >  C# Script**) in this folder and cal
     * Add teabag
     * etc.
     
+3. Now that you understand the code you've got, it's time to start adding to it!
+
+  First, you need to add some **variables**, inside the **class** but before the functions, like this:
+  ```cs
+    public class RoboMover : MonoBehaviour {
+
+      public float moveSpeed = 4.0f;
+      public Rigidbody rb;
+      public Transform tf;
+      
+      // Use this for initialization
+      void Start () {
+  ```
+  These **variables** are labels on values, or things. In this case we've got:
+    * `moveSpeed`—a float (decimal) number, in this case 4.0
+    * `rb`—a variable you'll use to refer to the Rigidbody component
+    * `tf`—a variable you'll use to refer to the Transform component
+4. 
 
 
-Add a public float called moveSpeed and initialise it at 4.0f
-Add a public Rigidbody called rb - this will be how we refer to the Rigidbody component!
-Add a public Transform called tf - and this is how we refer to the Transform component!
+
 Remove the Start section, we don’t need it here.
 In the Update function,
 Get the direction you want from the input (controller stick or keyboard) -> Create a new Vector3 called desiredDirection and assign it the input from the player.			Vector3 desiredDirection = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
