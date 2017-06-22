@@ -87,14 +87,13 @@ Create a new C# script (**Assets > Create >  C# Script**) in this folder and cal
       rb.MovePosition (rb.position + desiredDirection);
     }
   ```
-In the Update function,
-Get the direction you want from the input (controller stick or keyboard) -> Create a new Vector3 called desiredDirection and assign it the input from the player.			Vector3 desiredDirection = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
-Multiply the desiredDirection by the movement speed we set for MazeRobo -> Assign desiredDirection the moveSpeed multiplied by desiredDirection.				desiredDirection = moveSpeed * desiredDirection;
-Multiply the desiredDirection by a special value that makes the character move at the desired speed no matter what computer it's on -> Assign desiredDirection the Time.deltaTime value multiplied by desiredDirection.					desiredDirection = Time.deltaTime * desiredDirection;
-Tell the rigidbody to add our new direction to our current position - so our body moves! rb.MovePosition(rb.position + desiredDirection);
-That should do it - we’re close to getting MazeRobo moving now!
+  The first line of the function creates `desiredDirection`, which is a  set of three coordinates. Two of them are taken from `Input`, which is the direction the game receives from the player. The last is the depth of the character, which you're not changing so set to 0.
+  You then multiply the `desiredDirection` by `moveSpeed`, the variable you set earlier that controls the speed at which MazeRobo moves.
+  Next, you multiply it again by `Time.deltaTime` which is the amount of time since the last time `Update` ran. This means the direction changes correctly no matter the type of computer it's on. 
+  Finally, you change the position of the `rb`, the RigidBody (which is MazeRobo itself, remember?), by the amount you've calculated.
+  What all this adds up to is moving the character a tiny bit in the direction the player is sending it with the controls, every time the screen is updated. That should do it! You're close to getting MazeRobo moving now!
 
-Back in Unity, drag and drop your RoboMover script from the scripts folder and onto the MazeRobo gameobject in the Hierarchy. You can see that script is now present in MazeRobo’s inspector, under the Rigidbody.
+6. Back in Unity, drag and drop your RoboMover script from the scripts folder and onto the MazeRobo gameobject in the Hierarchy. You can see that script is now present in MazeRobo’s inspector, under the Rigidbody.
  
 There are two empty fields in the RoboMover script - Rb and Tf. These stand for Rigidbody and Transform - and if we click-and-drag the names of these components from their places in the Inspector and into their respective fields, RoboMover (the script) will have all the info it needs to move MazeRobo!
 
