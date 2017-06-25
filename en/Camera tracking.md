@@ -32,6 +32,13 @@
   ```cs
     void Start () {
       distanceBetweenPlayerAndCam = tf.position - playerTransform.position;
+    }	
+  ```
+  
+5. Finally, ensure that the game keeps that distance the same in every frame of the game by adding a line to the `Update` function like so:
+  
+  ```cs
+    void Update () {
+      tf.position = playerTransform.position + distanceBetweenPlayerAndCam;
     }
-	
   ```
