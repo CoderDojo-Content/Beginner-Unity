@@ -36,3 +36,27 @@ Above the `if` statement in your code, you'll need to collect the inputs from th
 
 	if (true) {
   ```
+  
+  5. Now it's time to update the test so it actually works! You'll need to change what's in the brackets on your `if` so as it checks **if** `inputHorizontal` is **greater** than 0.01 **or** **if** `inputVertical` is **greater** than 0.01 and gives a **true** result in either case. To do this, you'll need to use an **or** between your conditions. In C# (the language you're writing your scripts in) we represent **or** with two pipe characters, like this: `conditionA || conditionB`. There are also other ways of joining two or more conditions, for example the **and** operator (`&&`) and you can look those up online if you need them.
+  To write the **or** condition you need, just update your `if` statement like this:
+  
+   ```cs  
+     if (inputHorizontal > 0.01f || inputVertical > 0.01f) {
+   ``` 
+   
+ Now MazeRobo should stay facing the direction it's just moved in! If you're having any problems, check that your `Update` function matches this:
+ 
+ ```cs
+   void Update () {
+
+      float inputHorizontal = Mathf.Abs (Input.GetAxis ("Horizontal"));
+      float inputVertical = Mathf.Abs (Input.GetAxis ("Vertical"));
+
+      if (inputHorizontal > 0.01f || inputVertical > 0.01f) {
+        Vector3 desiredDirection = new Vector3 (Input.GetAxis ("Horizontal"), 0.0f, Input.GetAxis ("Vertical"));
+        desiredDirection = moveSpeed * desiredDirection;
+        desiredDirection = Time.deltaTime * desiredDirection;
+        rb.MovePosition (rb.position + desiredDirection);
+        rb.MoveRotation (Quaternion.LookRotation (desiredDirection, Vector3.up));
+		}
+ ```
