@@ -26,3 +26,5 @@
 6. Save the changes to the **script** and go back into Unity. Drag the **script** onto the "WinZone" in the **Hierarchy** and then, with "WinZone" selected, drag the "Fireworks" object from the **Hierarchy** into the "Fireworks" field in the "Win Zone (Script)" section of the **Inspector**.
 
 7. Save the game, run it and put the "Ball" in the "WinZone". See what happens!
+
+8. That's all the basic pieces of the game! Now, this is called "MazeRobo", so there should probably be a Maze... you've got one wall, so add some more cubes, play with the **Position** and **Scale** of them and build a few walls! Move the "WinZone" around a little, so it's harder to get to and give your player a real challenge! Then maybe find someone else at your Dojo making this game and swap, to see if you can beat each other's mazes!
