@@ -18,11 +18,11 @@
 3. At the start of the script, just inside the "CameraMover" class, add three **variables** like so:
 
     ```cs
-        public class CameraMover : MonoBehaviour {
+      public class CameraMover : MonoBehaviour {
         
-            public Transform tf;
-	    public Transform playerTransform;
-	    public Vector3 distanceBetweenPlayerAndCam;      
+        public Transform tf;
+        public Transform playerTransform;
+        public Vector3 distanceBetweenPlayerAndCam;      
     ```
    
   These track the position of the camera (`tf`), the position of the player/MazeRobo (`playerTransform`) and the distance, in x,y,z terms, from the player to the camera (`distanceBetweenPlayerAndCam`).  
