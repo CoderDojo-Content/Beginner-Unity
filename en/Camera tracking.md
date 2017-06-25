@@ -42,3 +42,5 @@
       tf.position = playerTransform.position + distanceBetweenPlayerAndCam;
     }
   ```
+  
+  Now run the game and watch the camera follow you around! 
