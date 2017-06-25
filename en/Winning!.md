@@ -22,4 +22,4 @@
 
 6. Save the changes to the **script** and go back into Unity. Drag the **script** onto the "WinZone" in the **Hierarchy** and then, with "WinZone" selected, drag the "Fireworks" object from the **Hierarchy** into the "Fireworks" field in the "Win Zone (Script)" section of the **Inspector**.
 
-7. Save the game, run it and put the "Ball" in the "WinZone".
+7. Save the game, run it and put the "Ball" in the "WinZone". See what happens!
