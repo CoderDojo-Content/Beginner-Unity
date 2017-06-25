@@ -37,7 +37,7 @@ Above the `if` statement in your code, you'll need to collect the inputs from th
 	if (true) {
   ```
   
-  5. Now it's time to update the test so it actually works! You'll need to change what's in the brackets on your `if` so as it checks **if** `inputHorizontal` is **greater** than 0.01 **or** **if** `inputVertical` is **greater** than 0.01 and gives a **true** result in either case. To do this, you'll need to use an **or** between your conditions. In C# (the language you're writing your scripts in) we represent **or** with two pipe characters, like this: `conditionA || conditionB`. There are also other ways of joining two or more conditions, for example the **and** operator (`&&`) and you can look those up online if you need them.
+5. Now it's time to update the test so it actually works! You'll need to change what's in the brackets on your `if` so as it checks **if** `inputHorizontal` is **greater** than 0.01 **or** **if** `inputVertical` is **greater** than 0.01 and gives a **true** result in either case. To do this, you'll need to use an **or** between your conditions. In C# (the language you're writing your scripts in) we represent **or** with two pipe characters, like this: `conditionA || conditionB`. There are also other ways of joining two or more conditions, for example the **and** operator (`&&`) and you can look those up online if you need them.
   To write the **or** condition you need, just update your `if` statement like this:
   
    ```cs  
