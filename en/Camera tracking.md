@@ -13,4 +13,14 @@
         * Y: 1
         * Z: 1
         
-2. Now you've changed the camera's angle (run the game to test it if you like!) but it still doesn't follow MazeRobo. To make that happen you'll have to update the camera's location every frame and to make that happen, you'll need another **script**.
+2. Now you've changed the camera's angle (run the game to test it if you like!) but it still doesn't follow MazeRobo. To make that happen you'll have to update the camera's location every frame and to make that happen, you'll need another **script**. Create one (**Assets > Create > C# Script**) and call it "CameraMover". Put it in the "Scripts" folder.
+
+3. At the start of the script, just inside the "CameraMover" class, add three **variables** like so:
+
+    ```cs
+        public class CameraMover : MonoBehaviour {
+        
+            public Transform tf;
+	    public Transform playerTransform;
+	    public Vector3 distanceBetweenPlayerAndCam;      
+    ```
