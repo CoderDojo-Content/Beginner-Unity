@@ -24,3 +24,7 @@
 	    public Transform playerTransform;
 	    public Vector3 distanceBetweenPlayerAndCam;      
     ```
+   
+  These track the position of the camera (`tf`), the position of the player/MazeRobo (`playerTransform`) and the distance, in x,y,z terms, from the player to the camera (`distanceBetweenPlayerAndCam`).  
+
+4. 
