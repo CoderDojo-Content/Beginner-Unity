@@ -27,4 +27,11 @@
    
   These track the position of the camera (`tf`), the position of the player/MazeRobo (`playerTransform`) and the distance, in x,y,z terms, from the player to the camera (`distanceBetweenPlayerAndCam`).  
 
-4. 
+4. Now you need to set the initial distance between the player and the camera as the one you want to keep. Do this inside the `Start` function like so:
+
+  ```cs
+    void Start () {
+      distanceBetweenPlayerAndCam = tf.position - playerTransform.position;
+    }
+	
+  ```
