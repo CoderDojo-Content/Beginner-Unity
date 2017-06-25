@@ -35,12 +35,15 @@
     }	
   ```
   
-5. Finally, ensure that the game keeps that distance the same in every frame of the game by adding a line to the `Update` function like so:
+5. Next, ensure that the game keeps that distance the same in every frame of the game by adding a line to the `Update` function like so:
   
   ```cs
     void Update () {
       tf.position = playerTransform.position + distanceBetweenPlayerAndCam;
     }
   ```
-  
-  Now run the game and watch the camera follow you around! 
+6. You need to attach the script to the camera now, so go back to Unity and select the "Main Camera" in the **Hierarchy**. Then drag the script from the **Project** space onto the "Main Camera".
+
+7. Find the "Camera Mover (Script)" in the **Inspector** and drag the "Main Camera" from the **Hierarchy** onto the "Tf" field. Then drag "MazeRoboBody" from the **Hierarchy** onto the "Player Transform" field.
+
+8. Now run the game and watch the camera follow you around! 
