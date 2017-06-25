@@ -13,4 +13,4 @@
         * Y: 1
         * Z: 1
         
-2. 
+2. Now you've changed the camera's angle (run the game to test it if you like!) but it still doesn't follow MazeRobo. To make that happen you'll have to update the camera's location every frame and to make that happen, you'll need another **script**.
