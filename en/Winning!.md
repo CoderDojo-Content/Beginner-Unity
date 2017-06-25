@@ -5,7 +5,6 @@
   * Y: 1
   * Z: -2
 
-
 3. You're going to write another **script** to let "WinZone" detect when the "Ball" touches it. In order to do that, the ball needs to be **tagged**. Select "Ball" in the **Hierarchy** and then select the **Tag** field just under its name in the **Inspector**. Choose "Add Tag" then click on the "+" icon and create the tag "Ball". Re-select "Ball" in the **Hierarchy**, check the **Tag** list again and choose the "Ball" tag you just created.
 
 4. While you're at it, go ahead and add some celebration to let the player know when they've won! Create a **Particle System** (**Create > GameObject > Particle System**) and call it "Fireworks". Select it and untick the checkbox beside its name in the **Inspector**. This hides the object, so you can make it appear with your **script** once you're ready to set off the fireworks! Now look in the list of settings in the **Inspector**, find "Start Color" and set it to yellow... or green... or whatever you like really!
