@@ -18,4 +18,6 @@
     }
   ```
   
-  What's happening here is a **GameObject** called "fireworks" is created (you'll connect it to your fireworks in a moment) and this **script** then waits for anything to collide with the **object** it's attached to (whichever one you drag it on to, in this case it'll be "WinZone"). If the thing that collided with it, which it will automatically assign to the **Collider** variable "col", happens to have the tag "Ball" then the "fireworks" object will be made to appear.
+  What's happening here is a **GameObject** called "fireworks" is created (you'll connect it to your fireworks in a moment) and this **script** then waits for any **Rigidbody** to touch the **collider** it's attached to (whichever one you drag it on to, in this case it'll be "WinZone"). If the thing that collided with it, which it will automatically assign to the **Collider** variable "col", happens to have the tag "Ball" then the "fireworks" object will be made to appear.
+
+6. Save the changes to the **script** and go back into Unity. Drag the **script** onto the 
