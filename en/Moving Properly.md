@@ -13,15 +13,26 @@
     void Update () {
     
     	if (true) {
-    		Vector3 desiredDirection = new Vector3 (Input.GetAxis ("Horizontal"), 0.0f, Input.GetAxis ("Vertical"));
-    		desiredDirection = moveSpeed * desiredDirection;
-    		desiredDirection = Time.deltaTime * desiredDirection;
-    		rb.MovePosition (rb.position + desiredDirection);
-    		rb.MoveRotation (Quaternion.LookRotation (desiredDirection, Vector3.up));
+    	  Vector3 desiredDirection = new Vector3 (Input.GetAxis ("Horizontal"), 0.0f, Input.GetAxis ("Vertical"));
+    	  desiredDirection = moveSpeed * desiredDirection;
+    	  desiredDirection = Time.deltaTime * desiredDirection;
+    	  rb.MovePosition (rb.position + desiredDirection);
+    	  rb.MoveRotation (Quaternion.LookRotation (desiredDirection, Vector3.up));
     	}
     }
   ```
   
   Right now, you're forcing the statement to be **true** by actually passing it `true` as the condition. Run the game and check it's all still working.
 
-4. Now you need to create your test conditions. When you tell MazeRobo to go forward Unity sees that as a positive number (e.g. 1) and when you tell it to go backwards, it sees that as a negative number (e.g. -1). You just want to test for the *size* of the number, so you'll need to 
+4. Now you need to create your test conditions. When you tell MazeRobo to go forward Unity sees that as a positive number (e.g. 1) and when you tell it to go backwards, it sees that as a negative number (e.g. -1). You just want to test for the *size* of the number, so you'll need to get the **absolute value** of the number. The **absolute value** is the value of the number without the sign and is always a positive number, or zero.
+
+Above the `if` statement in your code, you'll need to collect the inputs from the user and get their **absolute values** like this:
+
+  ```cs
+    void Update () {
+
+	float inputHorizontal = Mathf.Abs (Input.GetAxis ("Horizontal"));
+	float inputVertical = Mathf.Abs (Input.GetAxis ("Vertical"));
+
+	if (true) {
+  ```
