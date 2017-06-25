@@ -23,3 +23,5 @@
   ```
   
   Right now, you're forcing the statement to be **true** by actually passing it `true` as the condition. Run the game and check it's all still working.
+
+4. Now you need to create your test conditions. When you tell MazeRobo to go forward Unity sees that as a positive number (e.g. 1) and when you tell it to go backwards, it sees that as a negative number (e.g. -1). You just want to test for the *size* of the number, so you'll need to 
