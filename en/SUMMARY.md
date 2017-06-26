@@ -1,7 +1,12 @@
 #Summary
 
 * [Getting Setup](README.md)
-* [](Setting the stage.md)
-* [](Making a robot.md)
-* [](Adding colour.md)
+* [Setting the Stage](Setting the stage.md)
+* [Making a Robot](Making a robot.md)
+* [Adding Colour](Adding colour.md)
+* [Making MazeRobo move](Making MazeRobo move.md)
+* [Moving properly](Moving properly.md)
+* [Give MazeRobo something to play with](Give MazeRobo something to play with.md)
+* []()
+
 
