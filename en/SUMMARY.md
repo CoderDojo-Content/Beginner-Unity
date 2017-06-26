@@ -6,7 +6,8 @@
 * [Adding Colour](Adding colour.md)
 * [Making MazeRobo move](Making MazeRobo move.md)
 * [Moving properly](Moving properly.md)
+* [Camera tracking](Camera tracking.md)
 * [Give MazeRobo something to play with](Give MazeRobo something to play with.md)
-* []()
+* [Winning!](Winning!.md)
 
 
