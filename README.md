@@ -1,7 +1,7 @@
 # GitBook Sushi Card Series Template
 This is a template for creating a Sushi Card series in [GitBook](https://gitbook.com). You can find instructions for creating a GitBook based on it [here](http://dojo.soy/gitbook-sushi).
 
-Once you've followed all those instructions, you'll need to follow the instructions below on how to configure this template for your use.
+Once you've followed all those instructions, you'll need to follow the instructions below on how to configure this template for your use. 
 
 ## Configuring the template
 You need to do the following to get everything setup properly:  
